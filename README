@@ -1,0 +1,24 @@
+HOW TO USE
+
+	CONVERT FROM SPREADSHEET TO SORTABLE TABLE - LINUX/MACOS ONLY
+	run 'python spread2table.py input.odf output.html'
+	Current version only works on machines with openoffice installed on linux
+	for the spreadsheet -> .csv conversion. Also you'll probably have to 
+	play with the ooffice paths to get ssconverter.py working esp if on macos.
+	If you can't get it working export to .CSV and use csv2html.py.
+	
+	CONVERT FROM .CSV TO SORTABLE TABLE - ALL OS - WINDOWS
+	run 'python csv2html.py input.csv output.html'
+	Input must be a .csv file. Most spreadsheet programs can export their
+	native filetype to .csv.
+
+LICENSING INFORMATION
+
+CSV2HTML.PY licensed as x11 from mvolz.com.
+SORTTABLE.JS from http://www.kryogenix.org/code/browser/sorttable/
+and is also under an x11 license
+OOUTILS.PY and SSCONVERTER.PY Copyright (C) 2008 Mirko Nasato 
+<mirko@artofsolving.com> and is modified by Mitch Frazier
+Licensed under the GNU LGPL v2.1 - or any later version.
+See files for more details
+
