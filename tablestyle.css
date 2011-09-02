@@ -1,0 +1,31 @@
+/* CSS for tables */
+
+table.sortable {
+	font-size:14;
+}
+
+table.sortable td {
+	padding:3px;
+}
+
+table.sortable th {
+    background-color:#eee;
+    font-weight: bold;
+    cursor: default;
+}
+
+table.sortable tr {
+
+}
+
+/* For alternating rows. Currently not recommended because sorting will
+ * mess up the even-odd thing. 
+ * */
+
+#even {
+	background-color:#fff;
+}
+
+#odd {
+	background-color:#fff
+}
