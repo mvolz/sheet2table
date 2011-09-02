@@ -45,7 +45,10 @@ KNOWN BUGS
 	your os. You can try finding the correct paths and adding it to
 	the p dict in ssconverter.py. Failing that, you can export your
 	spreadsheet to a .csv- most GUI spreadsheet programs allow this-
-	and use csv2html.py instead
+	and use csv2html.py instead.
+	
+	If someone wants to make ssconverter.py more general and send a pull 
+	request that would be great. 
 	
 
 LICENSING INFORMATION
