@@ -1,16 +1,52 @@
 HOW TO USE
 
-	CONVERT FROM SPREADSHEET TO SORTABLE TABLE - LINUX/MACOS ONLY
+	CONVERT FROM SPREADSHEET TO SORTABLE HTML TABLE - LINUX/MACOS ONLY
 	run 'python spread2table.py input.odf output.html'
 	Current version only works on machines with openoffice installed on linux
 	for the spreadsheet -> .csv conversion. Also you'll probably have to 
 	play with the ooffice paths to get ssconverter.py working esp if on macos.
 	If you can't get it working export to .CSV and use csv2html.py.
 	
-	CONVERT FROM .CSV TO SORTABLE TABLE - ALL OS - WINDOWS
+	CONVERT FROM .CSV TO SORTABLE HTML TABLE - ALL OS - WINDOWS
 	run 'python csv2html.py input.csv output.html'
 	Input must be a .csv file. Most spreadsheet programs can export their
 	native filetype to .csv.
+
+	CONVERT FROM SPREADSHEET TO .CSV -LINUX/MACOS ONLY
+	run 'python ssconvert.py input.odf output.csv'
+
+FILE DESCRIPTIONS
+
+	TABLESTYLE.CSS is a css file where you can edit the appearance
+	of your table. You will need to recreate a new output.html every time
+	you edit this file.
+
+	TEST.OSD is a sample spreadsheet to test the code on.
+
+	CSV2HTML.PY converts a .csv file into an html file containing
+	css and javascript. It can be run independantly.
+
+	SPREAD2TABLE.PY converts a spreadsheet file into an .html file.
+	It has a dependency on csv2html.py and ssconverter.py. It can be run
+	independantly.
+
+	SSCONVERTER.PY converts a spreadsheet file into an .csv file.
+	It has a dependancy on ooutils.py. It can be run independantly.
+
+	OOUTILS.PY provides functionality to access open office utils
+	from python. It has a dependancy on open office.
+
+	
+KNOWN BUGS
+	
+	SSCONVERTER.PY cycles through a dict (p) looking for the correct
+	open office dirs. Currently there are only three entries in that
+	list so in all likelihood ssconverter.py will have an error on 
+	your os. You can try finding the correct paths and adding it to
+	the p dict in ssconverter.py. Failing that, you can export your
+	spreadsheet to a .csv- most GUI spreadsheet programs allow this-
+	and use csv2html.py instead
+	
 
 LICENSING INFORMATION
 
