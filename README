@@ -1,7 +1,7 @@
 HOW TO USE
 
 	CONVERT FROM SPREADSHEET TO SORTABLE HTML TABLE - LINUX/MACOS ONLY
-	run 'python spread2table.py input.odf output.html'
+	run 'python sheet2table.py input.odf output.html'
 	Current version only works on machines with openoffice installed on linux
 	for the spreadsheet -> .csv conversion. Also you'll probably have to 
 	play with the ooffice paths to get ssconverter.py working esp if on macos.
@@ -26,7 +26,7 @@ FILE DESCRIPTIONS
 	CSV2HTML.PY converts a .csv file into an html file containing
 	css and javascript. It can be run independantly.
 
-	SPREAD2TABLE.PY converts a spreadsheet file into an .html file.
+	SHEET2TABLE.PY converts a spreadsheet file into an .html file.
 	It has a dependency on csv2html.py and ssconverter.py. It can be run
 	independantly.
 
